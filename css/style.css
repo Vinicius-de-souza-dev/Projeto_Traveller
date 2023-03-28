@@ -1,9 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300&display=swap');
 
+/************** Header *********/
+.header-page {
+    width: 100%;
+    height: 100px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header-menu ul {
+    display: flex;
+}
+
+.header-menu li {
+    margin-left: 20px;
+}
+
+.header-title {
+    color: var(--color-light);
+    font: 32px;
+}
+
+.header-span {
+    background-color: var(--color-red);
+    padding: 5px;
+    border-radius: var(--border-radius);
+}
+
+.active-scroll {
+    background-color: #861a2c;
+}
+
 .header{
     width: 100%;
     height: 50px;
-    background-color: #000000;
+    background-color: #f9f9f9;
     padding: 0 10px;
     display: flex;
     justify-content: space-between;
@@ -14,6 +51,133 @@
     color: #861a2c;
     font-size: 20px;
 }
+
+/************** Fim Header *********/
+
+/************** Hero *********/
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(var(--gradiente-start), var(--gradiente-end)),
+        url(../images/banner5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-light);
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 9vmin;
+    margin: 30px 0;
+}
+
+.hero p {
+    width: 70%;
+    margin: 20px 0 30px;
+    color: #f9f9f9;
+}
+
+.btn {
+    background-color: var(--color-red);
+    border: 2px solid var(--color-red);
+    padding: 8px 35px;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background-color: transparent;
+}
+
+/************** Fim Hero *********/
+
+/* Galeria */
+.galeria {
+    width: 90%;
+    margin: auto;
+    min-height: 100vh;
+    padding: 20px;
+    /* border: 1px solid #000; */
+}
+
+.galeria h2 {
+    text-align: center;
+    font-size: 6vmin;
+}
+
+.galeria-img {
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.galeria-img div {
+    width: 30%;
+    height: 500px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.galeria-img1 {
+    background-image: linear-gradient(var(--gradiente-start), var(--gradiente-end)),
+        url(../images/foto1.jpg);
+}
+
+.galeria-img2 {
+    background-image: linear-gradient(var(--gradiente-start), var(--gradiente-end)),
+        url(../images/foto2.jpg);
+}
+
+.galeria-img3 {
+    background-image: linear-gradient(var(--gradiente-start), var(--gradiente-end)),
+        url(../images/foto3.jpg);
+}
+
+.galeria-img4 {
+    background-image: linear-gradient(var(--gradiente-start), var(--gradiente-end)),
+        url(../images/foto4.jpg);
+}
+
+.galeria-img5 {
+    background-image: linear-gradient(var(--gradiente-start), var(--gradiente-end)),
+        url(../images/foto5.jpg);
+}
+
+.galeria-img6 {
+    background-image: linear-gradient(var(--gradiente-start), var(--gradiente-end)),
+        url(../images/foto6.jpg);
+}
+
+.galeria-img7 {
+    background-image: linear-gradient(var(--gradiente-start), var(--gradiente-end)),
+        url(../images/foto7.jpg);
+}
+
+.galeria-img8 {
+    background-image: linear-gradient(var(--gradiente-start), var(--gradiente-end)),
+        url(../images/foto8.jpg);
+}
+
+.galeria-img9 {
+    background-image: linear-gradient(var(--gradiente-start), var(--gradiente-end)),
+        url(../images/foto9.jpg);
+}
+
+/* Fim Galeria */
 
 .menu ul{
     list-style: none;
@@ -37,6 +201,7 @@
 
 .cabecalho{
     margin-left: 40px;
+    margin-bottom: 40px;
     padding-top: 20px;
 }
 
@@ -44,18 +209,8 @@
     width: 100%;
     height: auto;
     margin: 10px auto;
+    margin-top: 40px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.container_img{
-    width: 100%;
-    height: 300px;
-    margin: 10px;
-    text-align: center;
-    /*display: flex;*/
     align-items: center;
     justify-content: center;
     
@@ -159,6 +314,8 @@
 }
 
 .hospedagem{
+    margin-top: 40px;
+    margin-bottom: 40px;
     text-align: center;
     justify-content: center;
 }
@@ -173,49 +330,8 @@
     justify-content: center;
 }
 
-.btn {
-    background-color: var(--color-red);
-    border: 2px solid var(--color-red);
-    padding: 8px 35px;
-    border-radius: var(--border-radius);
-    transition: var(--transition);
-}
-
-.btn:hover {
-    background-color: transparent;
-}
-
-
-
-.galeria_img{
-    margin: 20px 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-}
-
-.galeria_img div{
-    width: 30%;
-    height: 500px;
-    border: 1px solid #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-
-.foto1{
-    margin-left: 40px;
-}
-
 .link{
-    margin-top: 200px;
+    margin-top: 40px;
     margin-left: 75px;
 }
 
@@ -225,7 +341,7 @@
 }
 
 .titulo_parque{
-    margin-top: 350px;
+    margin-top: 40px;
 }
 
 .imageparque{
@@ -370,16 +486,7 @@ li{
 }
 
 img{
-    width: 620px;
-    margin-right: 100px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-img:hover{
-    transform: scale(1.25, 1.25);
-    box-shadow: 2px 2px 20px rgba(0,0,0,.5);
+    width: 100%;
 }
 
 
@@ -391,14 +498,11 @@ body{
     background-color: #D6DAE8;
 }
 
-div{
-    padding: 35px;
-}
-
 table{
     width: 1000px;
     border: 1px solid #000000;
     margin: 10px auto;
+    margin-top: 40px;
     border-collapse: collapse;
 }
 
@@ -434,4 +538,23 @@ td, th{
     font-size: 15px;
 }
 
+/* Pensando no responsivo  */
+
+@media(max-width: 1020px) {
+
+    .paradise h2 {
+        font-size: 5vmin;
+    }
+
+    .paradise-itens {
+        flex-direction: column;
+        /* width: 80%; */
+    }
+
+    .paradise-itens div {
+        /* flex-direction: column; */
+        width: 80%;
+    }
+
+}
 
