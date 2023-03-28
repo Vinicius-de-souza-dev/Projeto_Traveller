@@ -59,7 +59,7 @@
     width: 100%;
     min-height: 100vh;
     background-image: linear-gradient(var(--gradiente-start), var(--gradiente-end)),
-        url(../images/banner5.jpg);
+        url(../assets/images/banner5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -134,47 +134,47 @@
 
 .galeria-img1 {
     background-image: linear-gradient(var(--gradiente-start), var(--gradiente-end)),
-        url(../images/foto1.jpg);
+        url(../assets/images/foto1.jpg);
 }
 
 .galeria-img2 {
     background-image: linear-gradient(var(--gradiente-start), var(--gradiente-end)),
-        url(../images/foto2.jpg);
+        url(../assets/images/foto2.jpg);
 }
 
 .galeria-img3 {
     background-image: linear-gradient(var(--gradiente-start), var(--gradiente-end)),
-        url(../images/foto3.jpg);
+        url(../assets/images/foto3.jpg);
 }
 
 .galeria-img4 {
     background-image: linear-gradient(var(--gradiente-start), var(--gradiente-end)),
-        url(../images/foto4.jpg);
+        url(../assets/images/foto4.jpg);
 }
 
 .galeria-img5 {
     background-image: linear-gradient(var(--gradiente-start), var(--gradiente-end)),
-        url(../images/foto5.jpg);
+        url(../assets/images/foto5.jpg);
 }
 
 .galeria-img6 {
     background-image: linear-gradient(var(--gradiente-start), var(--gradiente-end)),
-        url(../images/foto6.jpg);
+        url(../assets/images/foto6.jpg);
 }
 
 .galeria-img7 {
     background-image: linear-gradient(var(--gradiente-start), var(--gradiente-end)),
-        url(../images/foto7.jpg);
+        url(../assets/images/foto7.jpg);
 }
 
 .galeria-img8 {
     background-image: linear-gradient(var(--gradiente-start), var(--gradiente-end)),
-        url(../images/foto8.jpg);
+        url(../assets/images/foto8.jpg);
 }
 
 .galeria-img9 {
     background-image: linear-gradient(var(--gradiente-start), var(--gradiente-end)),
-        url(../images/foto9.jpg);
+        url(../assets/images/foto9.jpg);
 }
 
 /* Fim Galeria */
@@ -256,7 +256,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url(../images/bar.jpg);
+    background-image: url(../assets/images/bar.jpg);
 }
 
 .box_bar:hover{
@@ -274,7 +274,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url(../images/restaurante.jpg);
+    background-image: url(../assets/images/restaurante.jpg);
 }
 
 .box_restaurante:hover{
@@ -292,7 +292,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url(../images/parque.jpg);
+    background-image: url(../assets/images/parque.jpg);
 }
 
 .box_parque:hover{
@@ -555,6 +555,8 @@ td, th{
         /* flex-direction: column; */
         width: 80%;
     }
+
+/* Fim responsivo*/    
 
 }
 
